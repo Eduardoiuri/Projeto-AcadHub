@@ -1,0 +1,24 @@
+body{
+    background-color:cornflowerblue;
+display: flex;
+  justify-content: center; /* alinha horizontalmente */
+  align-items: center;     /* alinha verticalmente */
+  height: 100vh;           /* ocupa a tela inteira */
+  margin: 0;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 100px;
+
+
+    height: 500px;
+    width: 1020px;
+    background: linear-gradient(to right, cornflowerblue 50%,  antiquewhite 50% );
+    border: 2px solid linear-gradient(to right, cornflowerblue 50%, antiquewhite 50%);
+    border-radius: 10px;
+}
