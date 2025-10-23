@@ -1,21 +1,33 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - AcadHub</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Tela de Login</h1>
-    <form>
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" required><br><br>
+    <main class="container">
+        <h1>Login - AcadHub</h1>
 
-        <label for="senha">Senha:</label>
-        <input type="password" id="senha" required><br><br>
+        <form id="form-login">
+            <div class="input-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="exemplo@acadhub.com">
+            </div>
 
-        <button type="submit">Entrar</button>
-    </form>
+            <div class="input-group">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required placeholder="Sua senha">
+            </div>
+
+            <button type="submit" class="btn-primary">Entrar</button>
+        </form>
+
+        <p class="link">
+            Não tem conta? <a href="cadastro.html" class="btn-secondary">Cadastrar</a>
+        </p>
+    </main>
 
     <script src="js/login.js"></script>
 </body>
